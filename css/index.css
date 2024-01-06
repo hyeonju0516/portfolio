@@ -56,21 +56,21 @@ section {
 
 /* 반응형 */
 
-@media screen and (max-width:1080px) {
-    .project ul li {
-        flex-basis: 31.33% !important;
+@media all and (max-width:1080px) {
+    #wrap .project ul li {
+        flex-basis: 31.33%;
     }
 
 }
 
-@media screen and (max-width:800px) {
+@media all and (max-width:800px) {
 
     h2 {
         margin-bottom: 1rem;
     }
 
-    .introduction {
-        display: block !important;
+    #wrap .introduction {
+        display: block;
 
     }
 
@@ -78,8 +78,8 @@ section {
         padding-top: 3rem;
     }
 
-    .edulic {
-        display: block !important;
+    #wrap .edulic {
+        display: block;
     }
 
     .certificates {
@@ -87,27 +87,31 @@ section {
     }
 
 
-    .project ul {
-        gap: 10px 2% !important;
+    #wrap .project ul {
+        gap: 10px 2% ;
     }
 
-    .project ul li {
-        flex-basis: 49% !important;
+    #wrap .project ul li {
+        flex-basis: 49% ;
     }
 
     /* modal */
 
-    .modal_contents {
-        display: block !important;
+    .modal_cover .modal .modal_contents {
+        display: block ;
     }
 
     .modal_left {
         margin-bottom: 2rem;
     }
 
+    .modal_cover .modal .contents_detail div video{
+        width:90%;
+    }
+
 }
 
-@media screen and (max-width:500px) {
+@media all and (max-width:500px) {
 
     section {
         padding: 2rem 0;
@@ -117,8 +121,20 @@ section {
         gap: 0;
     }
 
-    .project ul li {
-        flex-basis: 100% !important;
+    #wrap .project ul li {
+        flex-basis: 100% ;
+    }
+
+    .modal_cover .modal{
+        padding:30px ;
+    }
+
+    .modal_cover .modal .contents_detail div{
+        padding: 2rem 0;
+    }
+
+    .modal_cover .modal .contents_detail div video{
+        width:100%;
     }
 }
 
@@ -354,9 +370,10 @@ footer {
     font-size: 1.8rem;
 }
 
-.modal_contents .modal_left video {
+.modal_contents .modal_left img {
     width: 100%;
     margin: 20px auto;
+    border:1px solid #ddd;
 }
 
 .modal_contents .modal_left>.modal_link {
@@ -383,7 +400,7 @@ footer {
     background-color: skyblue;
 } */
 
-.modal_right .contents_detail div span {
+.modal_right .right_contents div span {
     font-size: 18px;
     font-weight: bold;
     position: relative;
@@ -395,7 +412,7 @@ footer {
 
 }
 
-.modal_right .contents_detail div span:before {
+.modal_right .right_contents div span:before {
     display: block;
     content: '';
 
@@ -416,15 +433,38 @@ footer {
 
 }
 
-.modal_right .contents_detail div p {
+.modal_right .right_contents div p {
     margin: 30px 0;
     white-space: pre-line;
+    text-align: justify;
 }
+
+/* contents.detail */
+
+.contents_detail div{
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.contents_detail div h2{
+    margin-bottom: 3rem;
+}
+
+.contents_detail div video{
+    width:70%;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* close */
 
 .modal .close {
     width: 30px;
     height: 30px;
-    position: relative;
+    position: absolute;
+    top:20px;
+    right:20px;
     cursor: pointer;
 
     float: right;
