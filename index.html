@@ -14,15 +14,13 @@
         <section class="introduction">
             <div>
                 <h1>열정 가득한 신입 백엔드 개발자 조현주입니다.</h1>
-                <p>Anim laborum nulla laboris ad nulla incididunt consectetursicing nisi sint consequatnulla.elit.
-                    Laboris nisi fugiat aute reprehenderit. Aliqua excepteur sit doloreexcepteur in<br />
-                    voluptate mollit non tempor ut. Duis et culpa enim mollit consectetursicing
-                    qui
-
-                    laborm occaecat sit. Nostrud ipsum culpa enim reprehenderit. Irure reprehenderit
-                    culpa
-
-                    aliqua eu ndolor culpa aliqua non eiusmod consequat.</p>
+                <p>안녕하세요, 열정 가득한 신입 백엔드 개발자 조현주 입니다.
+                    정답이 있고 그 정답을 찾아 한 발자국씩 나아가는 백엔드 개발이 저에게는 큰 매력으로 다가왔습니다.
+                    어릴적부터 홈페이지를 만드는 사람이라는 막연한 꿈을 가지고 살았고 늦은 출발이지만
+                    현재는 그 꿈을 향해 달려가고 있습니다. 저는 책임감이 강하여 주어진 일에 최선을 다합니다.
+                    목표하는 바가 있다면 끝까지 해내는 편입니다.
+                    저의 책임감과 개발에 대한 열정은 저와 귀사를 성장하게 할 수 있다고 확신합니다.
+                    역량을 펼칠 수 있는 기회를 주시면 감사하겠습니다.</p>
             </div>
             <div>
                 <h3>contact</h3>
@@ -109,39 +107,15 @@
         <section class="project">
             <h2>🖥️ project</h2>
             <ul>
-                <li onclick="openModal('modal01')">
+                <li onclick="openModal('modal02')">
                     <div>
-                        <img src="./images/tbt.png" alt="tbt">
+                        <img src="./images/tbt_admin.png" alt="tbt_admin">
                     </div>
                     <span>팀프로젝트</span>
-                    <strong>아이웨어 쇼핑몰 TBT컨셉</strong>
-                    <p>트랜디한 아이웨어 전문 쇼핑몰로 이용에 필요한 서비스를 제공합니다.</p>
+                    <strong>TBT컨셉 관리자페이지</strong>
+                    <p>TBT컨셉의 데이터베이스 기반 조회/등록/수정/삭제 기능을 제공합니다.</p>
                 </li>
 
-                <li onclick="openModal('modal01')">
-                    <div>
-                        <img src="./images/tbt.png" alt="tbt">
-                    </div>
-                    <span>팀프로젝트</span>
-                    <strong>아이웨어 쇼핑몰 TBT컨셉</strong>
-                    <p>트랜디한 아이웨어 전문 쇼핑몰로 이용에 필요한 서비스를 제공합니다.</p>
-                </li>
-                <li onclick="openModal('modal01')">
-                    <div>
-                        <img src="./images/tbt.png" alt="tbt">
-                    </div>
-                    <span>팀프로젝트</span>
-                    <strong>아이웨어 쇼핑몰 TBT컨셉</strong>
-                    <p>트랜디한 아이웨어 전문 쇼핑몰로 이용에 필요한 서비스를 제공합니다.</p>
-                </li>
-                <li onclick="openModal('modal01')">
-                    <div>
-                        <img src="./images/tbt.png" alt="tbt">
-                    </div>
-                    <span>팀프로젝트</span>
-                    <strong>아이웨어 쇼핑몰 TBT컨셉</strong>
-                    <p>트랜디한 아이웨어 전문 쇼핑몰로 이용에 필요한 서비스를 제공합니다.</p>
-                </li>
                 <li onclick="openModal('modal01')">
                     <div>
                         <img src="./images/tbt.png" alt="tbt">
@@ -159,6 +133,8 @@
         <footer>Copyright 2024. Hyeonju All rights reserved.</footer>
     </div>
     <div class="modal_cover">
+
+        <!-- modal01 -->
         <div class="modal modal01">
             <div class="close" onclick="closeModal()"></div>
             <div class="modal_contents">
@@ -203,8 +179,11 @@
                             <p>생각한 만큼 구현을 하지 못해서 아쉬움이 많이 남는 프로젝트였지만 짧은 시간 동안 정말 열심히 코드를 짰던 것 같습니다.
 
                                 비록 아직 실력은 미흡하지만 배우고 싶었던 백엔드 영역까지 프로젝트로 적용해보니 훨씬 재밌고 행복한 시간이었습니다.                                
-                                
                             </p>
+                        </div>
+                        <div>
+                            <p><strong>배포방식 : </strong><span></span></p>
+                            <p><strong>배포주소 : </strong><a href="#"></a></p>
                         </div>
                     </div>
                 </div>
@@ -212,15 +191,174 @@
             
             <div class="contents_detail">
                 <div>
-                    <h2>회원가입 기능</h2>
+                    <h2>회원가입 / 로그인 기능</h2>
                     <video controls>
                         <source src="./video/tbt01.mp4" type="video/mp4">
                         지원하지 않는 동영상입니다.
                     </video>
-                    <p></p>
+                    <div>
+                        <p>🪄 각 필수 항목의 유효성 검사를 진행한 뒤 모두 조건에 만족해야만 회원가입 진행 가능</p>
+                        <p>🪄 이미 ID중복검사를 마쳤더라도 아이디의 값이 변하면 다시 ID중복확인 검사를 진행해야 하도록 구현</p>
+                        <p>🪄 사용자가 입력한 정보를 DB에 저장된 정보와 비교, PasswordEncoder를 사용하여 비밀번호 암호화</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>매장찾기 기능</h2>
+                    <video controls>
+                        <source src="./video/tbt04.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 DB에 저장된 지점 데이터를 기반으로 매장찾기 가능 </p>
+                        <p>🪄 검색결과의 매장명을 클릭하면 해당하는 좌표의 지도가 표시되도록 구현(카카오맵 API사용)</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>쿠폰 기능</h2>
+                    <video controls>
+                        <source src="./video/tbt05.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 관리자가 등록한 쿠폰을 기반으로 마이페이지에 출력하도록 구현</p>
+                        <p>🪄 쿠폰 발급 시 쿠폰 내역에서 바로 확인 가능하며 한번 받은 쿠폰은 다시 받을 수 없도록 구현</p>
+                        <p>🪄 주문 시 사용한 쿠폰에 대해서 사용 완료 처리</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>관심상품 기능</h2>
+                    <video controls>
+                        <source src="./video/tbt02.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 상세페이지에서 사용자가 원하는 상품을 관심 등록/해제를 할 수 있도록 구현(토글 방식)</p>
+                        <p>🪄 마이페이지에서 담은 관심상품 리스트가 확인되며 삭제 및 장바구니 담기 기능 사용 가능</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>주문내역 기능</h2>
+                    <video controls>
+                        <source src="./video/tbt03.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 axios를 활용하여 DB에 저장된 주문 내역 출력</p>
+                        <p>🪄 사용자가 지정한 주문 일자에 따른 필터링 기능 구현</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- modal02 -->
+
+        <div class="modal modal02">
+            <div class="close" onclick="closeModal()"></div>
+            <div class="modal_contents">
+                <div class="modal_left">
+                    <span>팀프로젝트</span>
+                    <h1 class="title">아이웨어 쇼핑몰 TBT컨셉</h1>
+                    <div class="modal_link">
+                        <span>GitHub : </span>
+                        <a href="https://github.com/twoz1/tbt-concept.git">https://github.com/twoz1/tbt-concept.git</a>
+                    </div>
+                    <img src="./images/tbt_admin.png" alt="tbt_admin">
+                    <div>
+                        <div>
+                            <p>기술스택</p>
+                            <span class="modal_round">SpringBoot</span>
+                            <span class="modal_round">JPA</span>
+                            <span class="modal_round">JSP</span>
+                            <span class="modal_round">jQuery</span>
+                        </div>
+                        <div>
+                            <p>구현기능</p>
+                            <span class="modal_round">상품CRUD</span>
+                            <span class="modal_round">쿠폰CRUD</span>
+                            <span class="modal_round">관심상품CRUD</span>
+                            <span class="modal_round">매장찾기CRUD</span>
+                            <span class="modal_round">pageNation</span>
+                            <span class="modal_round">검색기능</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_right">
+                    <div class="right_contents">
+                        <div>
+                            <span>프로젝트 소개</span>
+                            <p>TBT컨셉의 관리자 사이트로 회원, 상품, 주문, CS 등 다양한 정보를 관리합니다.
+                                같은 DB를 사용하여 사용자 사이트와 관리자 사이트의 데이터가 일관적이며 검색 기능을 통한 전체 및 사용자별 조회가 가능합니다.
+
+                                저는 전체적인 관리자 페이지의 틀과 페이지네이션, 검색기능, 상품, 쿠폰, 관심상품, 지점 등을 구현했습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <span>프로젝트 후기</span>
+                            <p>생각한 만큼 구현을 하지 못해서 아쉬움이 많이 남는 프로젝트였지만 짧은 시간 동안 정말 열심히 코드를 짰던 것 같습니다.
+
+                                비록 아직 실력은 미흡하지만 배우고 싶었던 백엔드 영역까지 프로젝트로 적용해보니 훨씬 재밌고 행복한 시간이었습니다.                                
+                            </p>
+                        </div>
+                        <div>
+                            <p><strong>배포방식 : </strong><span></span></p>
+                            <p><strong>배포주소 : </strong><a href="#"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contents_detail">
+                <div>
+                    <h2>상품관리</h2>
+                    <video controls>
+                        <source src="./video/a_tbt_product.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 상품에 대한 CRUD구현</p>
+                        <p>🪄 MultipartFile을 활용한 이미지 등록/수정 기능 구현</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>지점관리</h2>
+                    <video controls>
+                        <source src="./video/tbt04.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 지점 조회/등록/수정/삭제 기능 구현</p>
+                        <p>🪄 다음 카카오 우편번호 API를 활용하여 주소 조회 기능 구현</p>
+                        <p>🪄 카카오 맵 API 활용하여 선택한 주소에 따른 Geocoder 좌표값을 구하여 자동 출력</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>쿠폰관리</h2>
+                    <video controls>
+                        <source src="./video/tbt05.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 쿠폰에 대한 CRUD 구현</p>
+                        <p>🪄 사용자가 등록한 쿠폰 리스트 확인 및 삭제 기능</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>관심상품 관리</h2>
+                    <video controls>
+                        <source src="./video/tbt02.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 사용자가 등록한 관심상품 전체 리스트 확인 및 검색 기능</p>
+                        <p>🪄 발급한 관심상품 내역 확인 및 삭제 기능</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal03 -->
+        
     </div>
 </body>
 

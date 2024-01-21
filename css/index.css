@@ -129,8 +129,8 @@ section {
         padding:30px ;
     }
 
-    .modal_cover .modal .contents_detail div{
-        padding: 2rem 0;
+    .modal_cover .modal .contents_detail > div{
+        margin: 3rem 0;
     }
 
     .modal_cover .modal .contents_detail div video{
@@ -143,6 +143,14 @@ section {
 .introduction {
     display: flex;
     gap: 20px;
+}
+
+.introduction div{
+    flex-basis:55%;
+}
+
+.introduction div+div{
+    flex-basis:45%;
 }
 
 .introduction div h3 {
@@ -400,7 +408,7 @@ footer {
     background-color: skyblue;
 } */
 
-.modal_right .right_contents div span {
+.modal_right .right_contents div:not(:last-child) span {
     font-size: 18px;
     font-weight: bold;
     position: relative;
@@ -412,7 +420,7 @@ footer {
 
 }
 
-.modal_right .right_contents div span:before {
+.modal_right .right_contents div:not(:last-child) span:before {
     display: block;
     content: '';
 
@@ -433,17 +441,21 @@ footer {
 
 }
 
-.modal_right .right_contents div p {
+.modal_right .right_contents div:not(:last-child) p {
     margin: 30px 0;
     white-space: pre-line;
     text-align: justify;
 }
 
+.modal_right .right_contents div:last-child p{
+    padding:3px 0;
+}
+
 /* contents.detail */
 
-.contents_detail div{
+.contents_detail >div{
     text-align: center;
-    padding: 8rem 0;
+    margin: 8rem 0;
 }
 
 .contents_detail div h2{
@@ -455,6 +467,15 @@ footer {
     display:block;
     margin: 0 auto;
     text-align: center;
+}
+
+.contents_detail div div{
+    margin-top:30px;
+    
+}
+
+.contents_detail div p{
+    padding : 5px 0;
 }
 
 /* close */
