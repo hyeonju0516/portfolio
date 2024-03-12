@@ -32,6 +32,10 @@ strong {
     clear: both;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3 {
@@ -175,10 +179,6 @@ section {
 
 .introduction>div:nth-child(2) p a {
     word-break: break-all;
-}
-
-.introduction>div:nth-child(2) p a:hover {
-    text-decoration: underline;
 }
 
 /* edulic */

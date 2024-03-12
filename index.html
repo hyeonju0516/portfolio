@@ -28,10 +28,10 @@
                 <p><strong>Email</strong><span>tinghee2@gmail.com</span></p>
                 <p><strong>Github</strong><a href="https://github.com/hyeonju0516"
                         target="_blank">https://github.com/hyeonju0516</a></p>
-                <p><strong>Notion(스터디그룹)</strong><a
-                        href="https://www.notion.so/1484-2-4-1-1-1ab2307599f547ff9dc56bc09398ce62"
-                        target="_blank">https://www.notion.so/1484-2-4-1-1-1ab2307599f547ff9dc56bc09398ce62</a>
-                </p>
+                <!-- <p><strong>Notion(스터디그룹)</strong><a
+                        href="https://periodic-honeycrisp-e3e.notion.site/4a02078447ff4977bcf949ffb9e339d8"
+                        target="_blank">https://periodic-honeycrisp-e3e.notion.site/4a02078447ff4977bcf949ffb9e339d8</a>
+                </p> -->
             </div>
         </section>
         <section class="edulic">
@@ -107,6 +107,24 @@
         <section class="project">
             <h2>🖥️ project</h2>
             <ul>
+                <li onclick="openModal('modal04')">
+                    <div>
+                        <img src="./images/project.png" alt="a free nature">
+                    </div>
+                    <span>개인프로젝트</span>
+                    <strong>A free nature</strong>
+                    <p>소셜 로그인 및 게시판 이용이 가능한 사이트입니다.</p>
+                </li>
+
+                <li onclick="openModal('modal03')">
+                    <div>
+                        <img src="./images/hj_portfolio.png" alt="hj_portfolio">
+                    </div>
+                    <span>개인프로젝트</span>
+                    <strong>개인 포트폴리오</strong>
+                    <p>백엔드 개발 개인 포트폴리오 입니다.</p>
+                </li>
+
                 <li onclick="openModal('modal02')">
                     <div>
                         <img src="./images/tbt_admin.png" alt="tbt_admin">
@@ -142,7 +160,7 @@
                     <span>팀프로젝트</span>
                     <h1 class="title">아이웨어 쇼핑몰 TBT컨셉</h1>
                     <div class="modal_link">
-                        <span>GitHub : </span>
+                        <span>Git : </span>
                         <a href="https://github.com/twoz1/tbt-concept.git">https://github.com/twoz1/tbt-concept.git</a>
                     </div>
                     <img src="./images/tbt.png" alt="tbt">
@@ -170,7 +188,7 @@
                         <div>
                             <span>프로젝트 소개</span>
                             <p>젊은이들의 취향을 만족할만한 유니크한 개성과 독보적인 감성을 지향하여 10~30대까지 비교적 낮은 연령층을 사용자 타겟으로 하는 온라인 아이웨어 쇼핑몰입니다.
-
+                                
                                 팀원들과 Front-end부터 Back-end까지 역할을 분배하여 제작하였고 저는 회원가입, 로그인/로그아웃, 주문내역, 쿠폰, 관심상품 등을 담당하였습니다.
                             </p>
                         </div>
@@ -252,7 +270,6 @@
         </div>
 
         <!-- modal02 -->
-
         <div class="modal modal02">
             <div class="close" onclick="closeModal()"></div>
             <div class="modal_contents">
@@ -260,7 +277,7 @@
                     <span>팀프로젝트</span>
                     <h1 class="title">아이웨어 쇼핑몰 TBT컨셉</h1>
                     <div class="modal_link">
-                        <span>GitHub : </span>
+                        <span>Git : </span>
                         <a href="https://github.com/twoz1/tbt-concept.git">https://github.com/twoz1/tbt-concept.git</a>
                     </div>
                     <img src="./images/tbt_admin.png" alt="tbt_admin">
@@ -358,7 +375,122 @@
         </div>
 
         <!-- modal03 -->
-        
+        <div class="modal modal03">
+            <div class="close" onclick="closeModal()"></div>
+            <div class="modal_contents">
+                <div class="modal_left">
+                    <span>개인프로젝트</span>
+                    <h1 class="title">개인포트폴리오</h1>
+                    <div class="modal_link">
+                        <span>Git : </span>
+                        <a href="https://github.com/hyeonju0516/portfolio">https://github.com/hyeonju0516/portfolio</a>
+                    </div>
+                    <img src="./images/hj_portfolio.png" alt="hj_portfolio">
+                    <div>
+                        <div>
+                            <p>기술스택</p>
+                            <span class="modal_round">html</span>
+                            <span class="modal_round">css</span>
+                            <span class="modal_round">javascript</span>
+                        </div>
+                        <div>
+                            <p>구현기능</p>
+                            <span class="modal_round">modal팝업</span>
+                            <span class="modal_round">반응형</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_right">
+                    <div class="right_contents">
+                        <div>
+                            <span>프로젝트 소개</span>
+                            <p>스킬 및 구현 프로젝트를 정리해 놓은 포트폴리오입니다.
+                                꼭 필요한 정보로 가독성을 높이고 반응형을 적용했습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <span>프로젝트 후기</span>
+                            <p>아직 미흡하지만 정보를 하나씩 추가하며 발전시키고 있습니다.
+                                감사합니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p><strong>배포방식 : </strong><span>GitHub</span></p>
+                            <p><strong>배포주소 : </strong><a href="https://hyeonju0516.github.io/portfolio">https://hyeonju0516.github.io/portfolio</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal04 -->
+        <div class="modal modal04">
+            <div class="close" onclick="closeModal()"></div>
+            <div class="modal_contents">
+                <div class="modal_left">
+                    <span>개인프로젝트</span>
+                    <h1 class="title">A free nature</h1>
+                    <div class="modal_link">
+                        <span>Git : </span>
+                        <a href="https://github.com/hyeonju0516/social">https://github.com/hyeonju0516/social</a>
+                    </div>
+                    <img src="./images/project.png" alt="A free nature">
+                    <div>
+                        <div>
+                            <p>기술스택</p>
+                            <span class="modal_round">SpringBoot</span>
+                            <span class="modal_round">JPA</span>
+                            <span class="modal_round">QueryDSL</span>
+                            <span class="modal_round">JSP</span>
+                            <span class="modal_round">javascript</span>
+                            <span class="modal_round">css</span>
+                        </div>
+                        <div>
+                            <p>구현기능</p>
+                            <span class="modal_round">소셜로그인</span>
+                            <span class="modal_round">게시판CRUD</span>
+                            <span class="modal_round">무한댓글</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_right">
+                    <div class="right_contents">
+                        <div>
+                            <span>프로젝트 소개</span>
+                            <p>팀프로젝트에 담지 못해 아쉬웠던 소셜 로그인 기능을 구현했습니다.
+                                카카오/네이버/구글을 통한 회원가입 및 로그인이 가능하고 로그인 후 게시판 이용이 가능합니다.
+                                게시판은 페이지네이션, 검색기능, 무한댓글, 좋아요, 조회수 등 기능을 구현했습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <span>프로젝트 후기</span>
+                            <p>처음 접해보는 AWS로 배포를 진행하였는데 생각보다 어려운 점이 많았습니다. 그래도 독학으로 많이 검색하고 시간 투자를 해서 결국 배포를 해내어서 뿌듯하고 기쁩니다.
+                                에러가 많이 난 만큼 배운점이 많아서 의미있는 시간이었습니다. 다음에는 cafe24나 다른 방법으로 배포도 진행할 계획입니다.
+                            </p>
+                        </div>
+                        <div>
+                            <p><strong>배포방식 : </strong><span>AWS ubuntu WAR배포</span></p>
+                            <p><strong>배포주소 : </strong><a href="https://hjsocial.com">https://hjsocial.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contents_detail">
+                <div>
+                    <h2>소셜로그인</h2>
+                    <video controls>
+                        <source src="./video/project_소셜로그인.mp4" type="video/mp4">
+                        지원하지 않는 동영상입니다.
+                    </video>
+                    <div>
+                        <p>🪄 네이버/카카오/구글 소셜 로그인 기능 구현</p>
+                        <p>🪄 로그아웃 기능 구현</p>
+                    </div>
+                </div>
+                
+        </div>
+
     </div>
 </body>
 
