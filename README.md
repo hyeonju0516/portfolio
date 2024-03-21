@@ -18,7 +18,7 @@
 - `Java 11`
 - `war`
 - `Maven`
-- `JQuery`
+- `JavaScript`
 - **IDE** : Eclipse
 - **Framewordk** : Springboot(2.7.2)
 - **Database** : MySql(8.0.28) Workbench 사용
