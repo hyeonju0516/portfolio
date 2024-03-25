@@ -20,7 +20,7 @@
 - `Maven`
 - `JavaScript`
 - **IDE** : Eclipse
-- **Framewordk** : Springboot(2.7.2)
+- **Framewordk** : Springboot(2.x.x)
 - **Database** : MySql(8.0.28) Workbench 사용
 - **ORM** : JPA
 
