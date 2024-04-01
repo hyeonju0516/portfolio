@@ -109,7 +109,8 @@ section {
         margin-bottom: 2rem;
     }
 
-    .modal_cover .modal .contents_detail div video{
+    .modal_cover .modal .contents_detail div video,
+    .modal_cover .modal .contents_detail .pictures img{
         width:90%;
     }
 
@@ -133,11 +134,8 @@ section {
         padding:30px ;
     }
 
-    .modal_cover .modal .contents_detail > div{
-        margin: 3rem 0;
-    }
-
-    .modal_cover .modal .contents_detail div video{
+    .modal_cover .modal .contents_detail div video,
+    .modal_cover .modal .contents_detail .pictures img{
         width:100%;
     }
 }
@@ -458,20 +456,16 @@ footer {
     margin: 8rem 0;
 }
 
-.contents_detail div h2{
-    margin-bottom: 3rem;
-}
-
-.contents_detail div video{
+.contents_detail div video,
+.contents_detail .pictures img{
     width:70%;
     display:block;
-    margin: 0 auto;
+    margin: 3rem auto;
     text-align: center;
 }
 
-.contents_detail div div{
-    margin-top:30px;
-    
+.contents_detail .pictures p{
+    font-size:18px;
 }
 
 .contents_detail div p{
